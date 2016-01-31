@@ -173,5 +173,15 @@ namespace CloudFoundry.Env
             else
                 return value;
         }
+
+        /// <summary>
+        /// Casuses the app to crash
+        /// </summary>
+        public static void Kill()
+        {
+            Console.WriteLine("Forced kill of the app.");
+            Environment.Exit(-1);
+        }
     }
+
 }
